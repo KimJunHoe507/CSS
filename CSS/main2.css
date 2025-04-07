@@ -1,0 +1,15 @@
+@charset "UTF-8";
+div{
+    width: 700px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+.h22{
+    color: blue;
+}
+span{
+    color: red;
+}
+ul{
+    list-style: none;
+}
