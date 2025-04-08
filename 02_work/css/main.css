@@ -1,0 +1,45 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+div{
+    width: 390px;
+    padding: 10px;
+    border: 5px solid #ff0204;
+}
+div h1{
+    color: #3b5ce1;
+    /* 글자크기는 선택영역으로 확인 후 위아래 1px(즉 2px)더한 값 */
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+div h1 .span1{
+    background: #1979cf;
+    color: #fff;
+    border: 1px solid #1f5378;
+    padding: 2px 5px;
+    font-size: 11px;
+}
+div p{
+    color: #333;
+    line-height: 31px;
+    
+}
+div .p1{
+    color: #99999b;
+    font-size: 12px;
+}
+div p .span2{
+    color: #c34167;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: "궁서";
+}
+div p .span3{
+    color: #445696;
+    font-weight: 800;
+}
+div .p1 .date{
+    font-style: italic;
+}
