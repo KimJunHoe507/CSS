@@ -1,0 +1,129 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "맑은 고딕","malgun gothic" sans-serif;
+}
+li{
+    list-style: none;
+}
+.wrap{
+    width: 228px;
+    margin: auto;
+    padding: 8px;
+    border: 2px solid #616161;
+    border-radius: 5px          ;
+}
+.box1{
+    width: 142px;
+    margin: auto;
+    margin-top: 16px;
+    /* margin-bottom: 26px; */
+}
+.box1 img{
+    width: 142px;
+    height: 38px;
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header{
+    width: 228px;
+    height: 49px;
+    background: #C9EDFF;
+    margin-bottom: 8px;
+    color: #040404;
+    text-align: center;
+    line-height: 49px;
+    border-radius: 3px;
+}
+.nav{
+    width: 228px;
+    height: 22px;
+    background: #FACFD6;
+    margin-bottom: 8px;
+    color: #040404;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+}
+.section{
+    width: 141px;
+    height: 123px;
+    background: #EDFFA8;
+    float: left;
+    margin-bottom: 8px;
+    color: #040404;
+    text-align: center;
+    line-height: 123px;
+    border-radius: 3px;
+}
+.aside{
+    width: 79px;
+    height: 242px;
+    background: #FFF2B5;
+    float: right;
+    color: #040404;
+    text-align: center;
+    line-height: 242px;
+    border-radius: 3px;
+}
+.article{
+    width: 141px;
+    height: 111px;
+    background: #DED1ED;
+    float: left;
+    margin-bottom: 8px;
+    color: #040404;
+    text-align: center;
+    line-height: 111px;
+    border-radius: 3px;
+}
+.footer{
+    width: 228px;
+    height: 50px;
+    background: #BAFFD6;
+    clear: both;
+    color: #040404;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 3px;
+}
+.box2{
+    width: 597px;
+    height: 31px;
+    background: #000;
+    margin: 34px auto;
+
+}
+.box2 .url{
+    width: 124px;
+    height: 31px;
+    background: #000;
+    color: #BEBEBE;
+    float: left;
+    text-align: center;
+    line-height: 31px;
+    font-size: 10px;
+}
+.box2 .boxa{
+    width: 147px;
+    height: 31px;
+    background: #000;
+    float: right;
+}
+.box2 .boxa .boxb{
+    width: 95px;
+    height: 25px;
+    margin: 4px 0 2px 0;
+    margin: auto;
+}
+.box2 .boxa .boxb img{
+    width: 95px;
+    height: 25px;
+    margin: 4px 0 2px 0;
+}
