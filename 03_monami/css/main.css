@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* 폰트 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+*{margin: 0;padding: 0;}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    height: 89px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.header .inner{
+    width: 1400px;
+    height: 89px;
+    margin: auto;
+}
+.header .inner h1{
+    float: left;
+    margin-right: 120px;
+}
+.header .inner .gnb{
+    float: left;
+}
+.header .inner .gnb li{
+    float: left;
+    line-height: 89px;
+}
+.header .inner .gnb .first{
+    margin-right: 95px;
+}
+.header .inner .gnb .li2{
+    margin-right: 67px;
+}
+.header .inner .gnb .li3{
+    margin-right: 50px;
+}
+.header .inner .gnb .li4,
+.header .inner .gnb .li5{
+    margin-right: 85px;
+}
+.header .inner .gnb li a{
+    font-size: 17px;
+    color: #444;
+}
+.header .inner .ico{
+    float: right;
+}
+.header .inner .ico li{
+    float: left;
+    line-height: 89px;
+    margin-left: 28px;
+}
+.header .inner .ico .first{
+    margin-left: 0;
+    margin-top: 5px;
+}
