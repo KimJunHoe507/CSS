@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+.section{
+    width: 100%;
+    height: 600px;
+    background: url("../images/bg-img2.png.jpeg") no-repeat center top;
+}
+.section .inner{
+    width: 1270px;
+    height: 600px;
+    margin: auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.section .inner .title{
+    margin-left: 100px;
+}
+.section .inner .title h2{
+    font-size: 36px;
+    color: #000;
+    font-weight: 900;
+}
+.section .inner .title p{
+    font-size: 18px;
+    color: #404040;
+    font-weight: 500;
+    margin-top: 24px;
+}
+.section .inner ul{
+    width: 1270px;
+    height: 270px;
+    margin-top: 70px;
+}
+.section .inner ul li{
+    width: 230px;
+    height: 270px;
+    float: left;
+    margin-right: 30px;
+    padding: 56px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.section .inner ul li h3{
+    margin-top: 95px;
+    font-size: 18px;
+    color: #222;
+    font-weight: 700;
+}
+.section .inner ul li p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+.section .inner ul .first{
+    background: #fff url(../images/icon-1.png.png) no-repeat center 40px;
+}
+.section .inner ul .li2{
+    background: #fff url(../images/icon-2.png.png) no-repeat center 40px;
+}
+.section .inner ul .li3{
+    background: #fff url(../images/icon-3.png.png) no-repeat center 40px;
+}
+.section .inner ul .li4{
+    background: #fff url(../images/icon-4.png.png) no-repeat center 40px;
+}
+.section .inner ul .last{
+    background: #fff url(../images/icon-5.png.png) no-repeat center 40px;
+    margin-right: 0;
+}
