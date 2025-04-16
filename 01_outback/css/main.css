@@ -62,3 +62,8 @@ a{
     background: #222222;
     padding: 10px 20px;
 }
+.visual{
+    width: 100%;
+    height: 900px;
+    background: url("../images/20250314110005847042.png") no-repeat center top;
+}
