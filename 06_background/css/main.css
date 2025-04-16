@@ -1,0 +1,55 @@
+@charset "utf-8";
+body{
+    height: 3000px;
+}
+*{margin: 0;padding: 0;}
+div{
+    /* background에 이미지 삽입할 때 width, height에 값 지정 */
+    width: 1000px;
+    height: 600px;
+    background: gold;
+    margin: auto;
+    /* 해당 요소에 배경 이미지 반복 삽입으로 채울 때 */
+    /* "./"=현재 있는 폴더, "../"=상위 폴더 */
+    /* background-image: url("../images/icon.png"); */
+    /* 해당 요소에 배경 이미지를 가로로 반복삽입 할 때 */
+    /* repeat = 반복 */
+    /* background-repeat: repeat-x; */
+    /* 해당 요소에 배경 이미지를 세로로 반복삽입 할 때 */
+    /* background-repeat: repeat-y; */
+    /* 해당 요소에 배경 이미지를 하나만 삽입할 때 */
+    /* background-repeat: no-repeat; */
+    /* 배경 이미지 삽입할 때 short css */
+    /* background: gold url("../images/icon.png") repeat-x; */
+    /* background-image: url("../images/icon.png"); */
+    /* background-repeat: no-repeat; */
+    /* 배경 이미지 위치 */
+    /* left,right = x축, top,bottom = y축 */
+    /* center는 중앙 */
+    /* background-position: center top;
+    background-position: center;
+    background-position: center bottom;
+    background-position: right top;
+    background-position: left center;
+    /* 배경 이미지 위치2(%) */
+    /* background-position: 50% center;
+    background-position: 100% top;
+    background-position: 90% top;
+    background-position: center 100%; */
+    /* 배경 이미지 위치3(px) */
+    /* background-position: 50px 100px;
+    background-position: center 300px;  */
+    
+    /* short hand방식 */
+    /* 배경색, 이미지, 반복, x축, y축 */
+    /* background는 하나만 적용 */
+    /* background: gold url("../images/icon-3.png.png") no-repeat 100% bottom;
+    background: gold url("../images/icon.png") no-repeat 50% center; */
+
+    /* 배경 이미지를 스크롤바에 의해 스크롤/고정 */
+    /* 배경 이미지를 스크롤바를 움직여도 스크롤 고정 */
+    /* background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background: url("../images/icon.png") no-repeat 100px 0 fixed;
+}
