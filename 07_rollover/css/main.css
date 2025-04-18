@@ -113,19 +113,21 @@ button{
     width: 119px;
     height: 38px;
     border-radius: 40px;
-    background: #000;
     margin: 100px 0 0 50px;
 }
 .box2 .btn5{
     width: 119px;
     height: 38px;
     border-radius: 40px;
+    background: #000;
     color: #fff;
     line-height: 38px;
+    font-size: 16px;
 }
-.box2:hover{
-    color: #ababab;
-    background: #585858;
+.box2 .btn5:hover{
+    color: #333;
+    background: #fff;
+    border: 1px solid #333;
 }
 .box3{
     width: 179px;
