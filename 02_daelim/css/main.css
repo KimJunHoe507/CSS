@@ -39,6 +39,9 @@ a{
     line-height: 70px;
     font-weight: 700;
 }
+.header .inner .gnb li a:hover{
+    color: #3C5D83;
+}
 .header .inner .gnb .last{
     margin-right: 0;
 }

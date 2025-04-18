@@ -50,6 +50,9 @@ a{
     color: #444;
     font-weight: 400
 }
+.header .inner .gnb li a:hover{
+    color: #C5133C;
+}
 .header .inner .ico{
     float: right;
 }
