@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <h1>[position익히기]</h1>
+    <p>
+        포지셔닝은 모든태그요소들을 공중에 띄워서 원하는 위치에 배치하는 css명령이다<br>
+        가장 많이 사용되는 css명령 3가지입니다.
+    </p>
+    <ol>
+        <li>
+            static : 기본값, position명령을 해제
+        </li>
+        <li>
+            position:relative - 1. 제자리에서 공중에 띄우기
+                              - 2. 상대적인 기준을 설정
+        </li>
+        <li>
+            position:absolute - 요소를 원하는 위치에 배치, 기준은 웹브라우저
+        </li>
+        <li>
+            left, right, top, bottom으로 위치를 배치한다
+            좌(left)우(right)1, 상(top)하(bottom)1
+        </li>
+        <li>
+            z-index : 공중에 띄워져있는 position끼리 우선순위를 지정
+        </li>
+    </ol>
+    <div class="box1">box1</div>
+    <div class="box2">
+        <div class="orange">child1</div>
+        <div class="pink">child2</div>
+        <div class="purple">child3</div>
+    </div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+</body>
+</html>
