@@ -1,16 +1,15 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "roboto","Noto Sans KR", sans-serif;
 }
 *{margin: 0;padding: 0;}
 li{list-style: none;}
 a{text-decoration: none;}
-button{
-    border: none;
-    background: none;
-    cursor: pointer;
-}
+button{border: none;background: none;cursor: pointer;}
+/* 이미지 초기화 */
+img{border: none;display: block;}
+
 .header{
     width: 100%;
     height: 60px;
@@ -43,11 +42,68 @@ button{
     top: 50%;
     margin: -12.5px 20px 0 0;
 }
+.visual img{
+    width: 100%;
+}
 .login{
     width: 100%;
     height: 112px;
     background: #f6f6f6;
+    padding: 24px 15px;
+    box-sizing: border-box;
 }
-.visual img{
+.login .go{
+    float: right;
+    font-size: 14px;
+    font-weight: 700;
+    color: #0e9246;
+}
+.login p{
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+.order{
     width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: #f6f6f6;
+}
+.order ul.orderlist{
+    width: 90%;
+    margin: auto;
+    /* 자식 모두 flaot이면 부모 높이가 0 */
+    /* 자식 높이만큼 부모높이 감싸야한다 */
+    overflow: hidden;
+}
+.order ul.orderlist li{
+    width: 49%;
+    height: 176px;
+    border-radius: 16px;
+    padding: 18px;
+    box-sizing: border-box;
+    /* box에 그림자주는 css명령 */
+    box-shadow: 0.7px 1px 5px #c8c8c8;
+}
+.order ul.orderlist li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 16px;
+    color: #b2b2b0;
+    line-height: 24px;
+}
+.order ul.orderlist li a span{
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+}
+/* 각각의 li에 bg이미지 삽입 */
+.order ul.orderlist li:first-child{
+    background: #fff url("../images/img_fastsub2.png") no-repeat 90% 90%;
+    float: left;
+}
+.order ul.orderlist li:last-child{
+    background: #fff url("../images/img_homesub2.png") no-repeat 90% 90%;
+    float: right;
 }
