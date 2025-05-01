@@ -1,0 +1,107 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕","malgun gothic", sans-serif;}
+
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none;background: none;cursor: pointer;}
+
+.header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ededed;
+}
+.header .inner{
+    width: 1424px;
+    height: 80px;
+    /* background: gold; */
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.header .inner .gnb{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* flex에서만 사용하는 명령, 요소간 여백 */
+    gap: 43px;
+}
+.header .inner .gnb li a{
+    color: #666;
+    font-weight: 500;
+}
+.main{
+    width: 100%;
+}
+.main .tit{
+    width: 1424px;
+    height: 402px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.main .tit h2{
+    font-size: 36px;
+    font-weight: 900;
+}
+.main .tit button{
+    width: 140px;
+    height: 60px;
+    background: #eab10a;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.main .tit button:hover{
+    background: #a87f06;
+}
+.main .gall{
+    width: 1424px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* 상하, 좌우 / 하나만 쓰면 상하좌우 */
+    gap: 19px 22px;
+}
+.main .gall li{
+    width: 460px;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.main .gall li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main .gall li a .imgbox{
+    width: 100%;
+    height: 259px;
+}
+.main .gall li a .imgbox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.main .gall li a .info{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main .gall li a .info h3{
+    font-size: 27px;
+    font-weight: 700;
+    color: #000;
+}
+.main .gall li a .info p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
