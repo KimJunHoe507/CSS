@@ -1,7 +1,6 @@
 @charset "utf-8";
 body{
     font-family: "맑은 고딕","malgun gothic", sans-serif;
-    color: #333;
 }
 *{margin: 0;padding: 0;}
 li{list-style: none;}
@@ -41,6 +40,10 @@ a{text-decoration: none;}
     width: 100%;
     height: 300px;
     background: chartreuse;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 300px;
 }
 .wrap .contents{
     width: 100%;
