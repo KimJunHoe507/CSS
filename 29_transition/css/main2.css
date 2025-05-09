@@ -1,0 +1,49 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+    background: #333;
+}
+*{margin: 0;padding: 0;}
+img{border: none;}
+
+div{
+    width: 658px;
+    height: 507px;
+    border: 10px solid #fff;
+    margin: 125px auto 0;
+    position: relative;
+    overflow: hidden;
+}
+div p{
+    width: 100%;
+    height: 150px;
+    /* 투명도 0~1 / 1은 불투명, 0은 투명 */
+    background: rgba(255,255,255,0.5);
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
+    /* 왼쪽에서 낭라옴 */
+    /* left: -100%; */
+    /* top: 50%; */
+    /* 오른쪽에서 날라옴 */
+    /* right: -100%; */
+    /* top: 50%; */
+    /* 위에서 내려옴 */
+    /* left: 0; */
+    /* top: -100%; */
+    /* 아래에서 올라옴 */
+    left: 0;
+    bottom: -100%;
+    /* 좌우 이동할 때만 가운데 맞추는 용도 */
+    /* margin-top: -75px; */
+    transition: all 500ms ease-in-out;
+}
+div:hover p{
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 0; */
+    bottom: 0;
+}
