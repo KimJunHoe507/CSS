@@ -1,0 +1,58 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "margun gothic", sans-serif;
+}
+
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;}
+
+.section{
+    width: 562px;
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.section ul{
+    width: 522px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 11px 8px;
+}
+.section ul li{
+    width: 98px;
+}
+.section ul li a{
+    display: block;
+    width: 100%;
+}
+.section ul li a .imgbox{
+    width: 100%;
+    height: 126px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+}
+.section ul li a .imgbox img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.section ul li a .infor{
+    width: 100%;
+    margin-top: 11px;
+}
+.section ul li a .infor p{
+    font-size: 13px;
+    line-height: 19px;
+    color: #000;
+}
+.section ul li:hover a .imgbox img{
+    transform: scale(1.1);
+}
+.section ul li:hover a .infor p{
+    text-decoration: underline;
+}
