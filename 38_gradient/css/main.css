@@ -1,0 +1,65 @@
+@charset "utf=8";
+
+body{
+
+}
+
+*{margin: 0;padding: 0;}
+
+div{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.box1{
+    /* 직선형 그라디언트 */
+    /* 방향은 색상 앞에 입력(뒤에는 적용안됨) */
+    /* 기본값은 to bottom, 180deg */
+    background-image: linear-gradient(180deg, red, yellow);
+}
+.box2{
+    /* to right */
+    background-image: linear-gradient(45deg, red,yellow);
+}
+.box3{
+    /* to left */
+    background-image: linear-gradient(-45deg, red, yellow);
+}
+.box4{
+    /* to top */
+    background-image: linear-gradient(0deg, red, yellow);
+}
+.box5{
+    background-image: linear-gradient(45deg, red, yellow);
+}
+.box6{
+    background-image: linear-gradient(to right, red, yellow, blue);
+}
+.box7{
+    /* 색상 옆에 숫자(퍼센트) - 차지하는 비율 */
+    background-image: linear-gradient(red 10%, yellow 20%, green 70%);
+}
+.box8{
+    background-image: linear-gradient(red 50%, blue 50%);
+}
+.box9{
+    /* 원형 그라디언트 */
+    background-image: radial-gradient(red, yellow, blue);
+}
+.box10{
+    /* 정확한 원형 */
+    background-image: radial-gradient(circle, red, yellow, blue);
+}
+.box11{
+    background-image: conic-gradient(red, blue);
+}
+.figma{
+    width: 320px;
+    height: 102px;
+    background-image: linear-gradient(-45deg, #D6587E, #9D5DD8);
+}
+.test{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, purple);
+}
