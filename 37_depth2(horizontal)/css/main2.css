@@ -40,6 +40,7 @@ a{text-decoration: none;}
     height: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .inner .gnb>li{
     height: 100%;
@@ -66,4 +67,30 @@ a{text-decoration: none;}
 }
 .main .visual img{
     width: 100%;
+}
+.inner .gnb>li>.depth2{
+    display: flex;
+    width: 1360px;
+    height: 44px;
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+}
+.inner .gnb>li>.depth2>.depinner{
+    display: flex;
+    justify-content: center;
+    gap: 66px;
+}
+.inner .gnb>li>.depth2>.depinner>li>a{
+    font-size: 15px;
+    color: #999;
+    line-height: 44px;
+}
+.inner .gnb>li>.depth2>.depinner>li:hover>a{
+    color: #000;
+}
+.inner .gnb>li:hover>.depth2{
+    display: block;
 }
