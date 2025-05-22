@@ -1,0 +1,48 @@
+@charset "utf-8";
+body{
+
+}
+*{margin: 0;padding: 0;}
+
+div{
+    width: 710px;
+    margin: 0 auto 50px;
+    border: 1px solid #000;
+}
+
+.box1{
+    border-radius: 8px 26px;
+    padding: 35px 31px 50px;
+    box-sizing: border-box;
+    margin-top: 38px;
+}
+.box2{
+    border-radius: 8px;
+    padding: 35px 31px 50px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #000;
+}
+.box3{
+    height: 130px;
+    font-size: 32px;
+    background: #F2F2F2;
+}
+.box3 h1{
+    text-align: center;
+    line-height: 130px;
+    text-shadow: 4px 4px red;
+}
+.box4{
+    height: 130px;
+    font-size: 32px;
+    background: #000;
+}
+.box4 h1{
+    text-align: center;
+    line-height: 130px;
+    color: #000;
+    text-shadow: 0 0 10px #fff;
+}
+.box4 h1 span{
+    text-shadow: 4px 4px #fff;
+}
