@@ -1,0 +1,96 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕";
+}
+.box{
+    width: 1210px;
+    height: 1210px;
+    border: 11px solid #000;
+    margin: 12px auto 0;
+    position: relative;
+}
+/* 박스 안에 마우스를 올리면 일시정지 / 마우스 벗어나면 재생 */
+.box:hover div{
+    animation-play-state: paused;
+}
+.box .clock1{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /* 중심축 변경 */
+    transform-origin: center top;
+    animation: clock1_ani 2s ease-in-out forwards infinite;
+}
+@keyframes clock1_ani {
+    0%{transform: translateX(-50%) rotate(45deg);}
+    50%{transform: translateX(-50%) rotate(-45deg);}
+    100%{transform: translateX(-50%) rotate(45deg);}
+}
+
+.box .clock2{
+    position: absolute;
+    right: -15%;
+    top: 47%;
+    transform: translateX(-50%) rotate(135deg);
+    transform-origin: center top;
+    animation: clock2_ani 2s ease-in-out forwards infinite;
+}
+
+@keyframes clock2_ani {
+    0%{transform: translateX(-50%) rotate(135deg);}
+    50%{transform: translateX(-50%) rotate(45deg);}
+    100%{transform: translateX(-50%) rotate(135deg);}
+}
+.box .clock3{
+    position: absolute;
+    left: 50%;
+    bottom: -29%;
+    transform: translatex(-50%) rotate(180deg);
+    transform-origin: center top;
+    animation: clock3_ani 2s ease-in-out forwards infinite;
+}
+
+@keyframes clock3_ani {
+    0%{transform: translatex(-50%) rotate(225deg);}
+    50%{transform: translatex(-50%) rotate(135deg);}
+    100%{transform: translatex(-50%) rotate(225deg);}
+}
+.box .clock4{
+    position: absolute;
+    left: -8%;
+    top: 60%;
+    transform: translateY(-50%) rotate(270deg);
+    transform-origin: center top;
+    animation: clock4_ani 2s ease-in-out forwards infinite;
+}
+
+@keyframes clock4_ani {
+    0%{transform: translateY(-50%) rotate(315deg);}
+    50%{transform: translateY(-50%) rotate(225deg);}
+    100%{transform: translateY(-50%) rotate(315deg);}
+}
+
+
+
+.box div .line{
+    width: 8px;
+    height: 166px;
+    background: #000;
+    margin: auto;
+}
+.box div .circle{
+    width: 165px;
+    height: 165px;
+    background: url("../images/1.jpg") no-repeat 80%;
+    background-size: cover;
+    border: 6px solid #000;
+    border-radius: 100%;
+    margin: auto;
+}
+.box h3{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+}
