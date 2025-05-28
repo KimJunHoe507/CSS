@@ -1,0 +1,43 @@
+@charset "utf-8";
+body{
+    
+}
+.test1{
+    filter: blur(10px);
+}
+.test2{
+    /* 기본값 100%, 0%는 검정색 */
+    filter: brightness(10%);
+}
+.test3{
+    /* 기본값 100% */
+    filter: contrast(150%);
+}
+.test4{
+    filter: drop-shadow(20px 10px 10px gray);
+    filter: drop-shadow(0px 0px 10px gray);
+}
+.test5{
+    /* 기본값 0% */
+    filter: grayscale(50%);
+    filter: grayscale(100%);
+}
+.test6{
+    filter: sepia(100%);
+}
+.test7{
+    filter: saturate(0%);
+    filter: saturate(50%);
+    filter: saturate(100%);
+    filter: saturate(150%);
+    filter: saturate(200%);
+}
+.test8{
+    filter: opacity(10%) blur(10px);
+}
+.test9{
+    filter: invert(100%);
+}
+.test10{
+    filter: hue-rotate(45deg);
+}
