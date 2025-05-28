@@ -1,0 +1,111 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic",sans-serif;
+}
+
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/* header */
+.inner{
+    width: 800px;
+    height: 150px;
+    background: #F56074 url("../images/nav2.png") no-repeat right center;
+    margin: auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.inner .gnb{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.inner .gnb li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* content박스 */
+.content{
+    width: 800px;
+    margin: 15px auto ;
+    font-size: 15px;
+    /* 양쪽정렬 */
+    text-align: justify;
+    /* 다단설정 */
+    column-count: 3;
+    /* 다단설정 간격 */
+    column-gap: 30px;
+    /* 다단설정  */
+    column-rule: 1px dotted #333;
+}
+.content h3{
+    margin-top: 20px;
+}
+.content h4{
+    margin: 20px 0;
+}
+.content h3,.content h4,.content p{
+    letter-spacing: -0.8px;
+}
+.content p{
+    line-height: 22.5px;
+}
+
+/* 이미지박스 */
+.imgbox{
+    width: 800px;
+    height: 180px;
+    background: #ccc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.imgbox li{
+    width: 180px;
+    height: 135px;
+}
+.imgbox li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.imgbox li a img{
+    width: 100%;
+    height: 100%;
+}
+
+.content2{
+    width: 800px;
+    margin: 22px auto;
+}
+.content2 h3{
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.content2 ul{
+
+}
+.content2 ul li{
+    margin-left: 44px;
+    box-sizing: border-box;
+    list-style: circle;
+}
+footer{
+    width: 800px;
+    height: 70px;
+    background: #333;
+    margin: auto;
+}
+footer p{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: -0.2px;
+}
