@@ -1,0 +1,85 @@
+@charset "utf-8";
+body{
+    background: #333333;
+    font-size: 13px;
+    color: #fff;
+}
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+.wrap{
+    width: 434px;
+    margin: auto;
+    padding: 8px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.wrap header{
+    width: 100%;
+    height: 50px;
+    background: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.wrap .wrap2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .wrap2 nav,
+.wrap .wrap2 aside{
+    width: 95px;
+    background: #666666;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+.wrap .wrap2 section{
+    width: 196px;
+    background: #666666;
+    padding: 4px 6px 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2px;
+
+}
+.wrap .wrap2 section .wrap3{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.wrap .wrap2 section .wrap3 .header,
+.wrap .wrap2 section .wrap3 .footer{
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #999;
+    border-radius: 4px;
+}
+.wrap .wrap2 section .wrap3 article{
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #999;
+    border-radius: 4px;
+}
+.wrap footer{
+    width: 100%;
+    height: 39px;
+    background: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
