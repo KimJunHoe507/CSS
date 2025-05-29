@@ -1,0 +1,88 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    background: #7f7f7f;
+}
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+.wrap{
+    width: 915px;
+    margin: 12px auto 0;
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+.wrap header{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #2F528F;
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wrap nav{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #2F528F;
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap main{
+    width: 100%;
+    padding: 12px;
+    background: #d9d9d9;
+    border: 1px solid #2F528F;
+}
+.wrap main .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.wrap main .content .sectionwrap{
+    width: 570px;
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+.wrap main .content .sectionwrap section{
+    width: 100%;
+    height: 152px;
+    background: #F2F2F2;
+    border: 1px solid #2F528F;
+}
+.wrap main .content .sectionwrap section article{
+    width: 511px;
+    background: #FFD966;
+    border: 1px solid #2F528F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 18px auto;
+}
+.wrap main .content aside{
+    width: 243px;
+    height: 308px;
+    background: #F2F2F2;
+    border: 1px solid #2F528F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap footer{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #2F528F;
+    background: #d9d9d9;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
