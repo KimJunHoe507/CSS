@@ -1,0 +1,23 @@
+@charset "utf-8";
+body{
+
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+.section svg{
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* 내부색 */
+    /* fill: #fff; */
+    stroke: #fff;
+    stroke-width: 3px;
+}
