@@ -1,0 +1,21 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    header{
+        height: 70px;
+    }
+    header .inner{
+        width: 100%;
+        padding: 0 16px;
+    }
+    header .inner h1{
+        left: 16px;
+    }
+    header .inner nav{
+        display: none;
+    }
+    header .inner .lang{
+        display: none;
+    }
+    header .inner .m_menu{
+        display: block;
+    }
+}

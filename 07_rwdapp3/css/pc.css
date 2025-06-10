@@ -1,0 +1,50 @@
+header{
+    width: 100%;
+    height: 74px;
+    border-bottom: 1px solid #d9d9d9;
+}
+header .inner{
+    width: 1700px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+}
+header .inner h1{
+    width: 119px;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+header .inner h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header .inner h1 a img{
+    width: 100%;
+    height: 100%;
+}
+header .inner nav .gnb{
+    display: flex;
+    gap: 32px;
+}
+header .inner nav .gnb li a{
+    font-size: 11px;
+    font-weight: 700;
+    color: #383838;
+    letter-spacing: 1px;
+}
+header .inner .lang{
+    font-size: 12px;
+    font-weight: 900;
+    color: #383838;
+}
+.m_menu{
+    display: none;
+}
