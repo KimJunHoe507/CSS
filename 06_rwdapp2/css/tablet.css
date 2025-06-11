@@ -1,0 +1,57 @@
+@media ( min-width:768px ) and ( max-width:1024px ){
+    /* header */
+    header{
+        height: 120px;
+    }
+    header .inner{
+        width: 100%;
+        height: 100%;
+    }
+    header .inner h1{
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    header .inner .sns{
+        display: none;
+    }
+    header .inner nav{
+        height: 60px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    /* main */
+    .visual{
+        height: 600px;
+    }
+    .news .inner,
+    .work .inner{
+        width: 100%;
+    }
+    .news .inner h2,
+    .work .inner h2{
+        font-size: 30px;
+    }
+    .news .inner p,
+    .work .inner p{
+        font-size: 16px;
+    }
+    /* main skill */
+    .skill .inner{
+        width: 100%;
+    }
+    .skill .inner .list{
+        justify-content: center;
+    }
+    .skill .inner .list li{
+        width: 45%;
+    }
+    /* main news */
+    .news .inner .list li a .textbox h3{
+        font-size: 16px;
+    }
+    .news .inner .list li a .textbox p{
+        font-size: 12px;
+    }
+}
