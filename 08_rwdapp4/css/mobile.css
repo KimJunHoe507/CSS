@@ -1,0 +1,47 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    header{
+        height: 50px;
+    }
+    header .inner{
+        width: 100%;
+        padding: 0 15px;
+    }
+    header .inner h1{
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    header .inner nav .gnb{
+        display: none;
+    }
+    header .inner .m_btn{
+        display: block;
+        width: 21px;
+        height: 18px;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-indent: -99999px;
+        background: url("../images/m_menu.png")no-repeat;
+        background-size: 21px 18px;
+    }
+    header .inner .cart{
+        width: 21px;
+        height: 24px;
+        background: url("../images/m_mall.png")no-repeat;
+        background-size: 21px 24px;
+    }
+    main .visual .left,
+    main .visual .right{
+        display: none;
+    }
+    main p .show{
+        display: block;
+    }
+    main p .hidden{
+        display: none;
+    }
+    main .v_txt p{
+        background: #eee;
+    } 
+}

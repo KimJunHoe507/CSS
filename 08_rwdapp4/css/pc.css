@@ -1,0 +1,103 @@
+header .inner .m_btn{
+    display: none;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+}
+header .inner{
+    width: 960px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+header .inner h1{
+    width: 116px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .inner h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/logo.png")no-repeat;
+    background-size: 116px 20px;
+    text-indent: -99999px;
+}
+header .inner nav .gnb{
+    display: flex;
+    gap: 40px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+header .inner nav .gnb li a{
+    color: #777;
+}
+header .inner .cart{
+    display: block;
+    width: 76px;
+    height: 22px;
+    background: url("../images/btn_lf_ot.png")no-repeat;
+    text-indent: -99999px;
+}
+main{
+    width: 100%;
+}
+main .visual{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+main .visual img{
+    width: 100%;
+}
+main .visual .left{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .visual .right{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .v_txt{
+    width: 100%;
+    padding: 45px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+main .v_txt h2{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    padding: 10px 0;
+}
+main .v_txt p{
+    font-size: 16px;
+    color: #666;
+    line-height: 26px;
+    padding: 10px 0;
+}
+main p .show{
+    display: none;
+}
+main p .hidden{
+    font-style: normal;
+}
+main .v_txt p span{
+    font-weight: 700;
+}
