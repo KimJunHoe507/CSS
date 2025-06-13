@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQurey test</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- jQurey 라이브러리 연결 -->
+    <script src="./js/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <button>클릭</button>
+    </div>
+
+    <!-- 제이쿼리 프로그램 -->
+    <script>
+        // 제이쿼리를 위한 준비작업(바인딩)
+        $(function(){
+            // 제이쿼리 선택자
+            // $("선택자").실행할함수();
+            // css() : 자바스크립트 프로그램으로 css를 접근
+
+            // 버튼을 클릭하면 
+            $("button").click(function(){
+                // .box div 선택해서 css를 바꿈
+                $(".box div").css({"background":"blue"})
+            })
+
+
+
+        })
+
+    </script>
+</body>
+</html>
