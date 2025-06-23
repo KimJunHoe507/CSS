@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트에서 배열함수</title>
+</head>
+<body>
+    <script>
+        // let girls=[];
+        // girls[0]= "윤아";
+        // girls[1]= "태연";
+        // girls[2]= "제시카";
+        // girls[3]= "효연";
+        // girls[4]= "수영";
+        // girls[5]= "유리";
+        // girls[6]= "써니";
+        // girls[7]= "티파니";
+        // girls[8]= "서연";
+
+        // for(i=0;i<=8;i++){
+        //     document.write("소녀시대 멤버는"+girls[i]+"입니다.<br>")
+        // };
+
+        // 배열에서 사용하는 함수
+        let fruit=["수박","딸기","복숭아"];
+        document.write(fruit+"<br>");
+
+        // 배열 첫번째 원소 추가
+        fruit.unshift("파인애플");
+        document.write(fruit+"<br>");
+
+        // 배열 첫번째 원소 제거
+        fruit.shift("파인애플");
+        document.write(fruit+"<br>");
+
+        // 배열 마지막 원소 추가
+        fruit.push("파인애플");
+        document.write(fruit+"<br>");
+
+        // 배열 마지막 원소 제거
+        fruit.pop("파인애플");
+        document.write(fruit+"<br>");
+
+        // 배열에 기억된 값중 index(key)알고 싶을 때
+        document.write(fruit.indexOf("수박")+"<br>");
+        document.write(fruit.indexOf("딸기")+"<br>");
+        document.write(fruit.indexOf("복숭아")+"<br>");
+
+        // 딸기 데이터를 토마토로 데이터 변경 지시
+        fruit[1]="토마토";
+        document.write(fruit+"<br>");
+
+        fruit[fruit.indexOf("토마토")]="딸기";
+        document.write(fruit+"<br>");
+
+        // 배열변수에 해당 원하는 데이터가 존재하는지(true/false) 확인하는 함수
+        document.write(fruit.includes("망고")+"<br>");
+        document.write(fruit.includes("딸기")+"<br>");
+        
+        // 배열변수에 데이터가 몇개가 있는지 알려주는 속성
+        document.write(fruit.length+"<br>");
+
+        // 배열 중간에 삽입/제거
+        // fruit.splice(삽입할시작번째,0,"삽입할 데이터")
+        // fruit.splice(제거할번째,제거할 개수)
+        fruit.splice(1,0,"파인애플");
+        document.write(fruit+"<br>");
+
+        fruit.splice(3,0,"망고");
+        document.write(fruit+"<br>");
+
+        document.write(fruit.length+"<br>");
+
+        fruit.splice(1,1);
+        document.write(fruit+"<br>");
+        fruit.splice(2,2);
+        document.write(fruit+"<br>");
+        
+        fruit.push("복숭아");
+        document.write(fruit+"<br>");
+        
+        fruit.splice(1,0,"파인애플");
+        document.write(fruit+"<br>");
+
+        
+        let fruit2=fruit.join("|");
+        document.write(fruit+"<br>");
+        document.write(fruit2+"<br>");
+        
+        let fruit3=fruit.join("#");
+        document.write(fruit+"<br>");
+        document.write(fruit2+"<br>");
+        document.write(fruit3+"<br>");
+        
+        // 파인애플 제거
+        fruit.splice(fruit.indexOf("파인애플"),1);
+        document.write(fruit+"<br>");
+
+        // 두 개의 배열을 하나의 배열로 합치기
+        let num1=[1,2,3,4,5];
+        let num2=[6,7,8,9];
+        let num3=num1.concat(num2);
+
+        document.write(num1+"<br>");
+        document.write(num2+"<br>");
+        document.write(num3+"<br>");
+
+        // 배열값 순서 정렬
+        document.write(fruit.sort()+"<br>");
+        document.write(fruit.reverse()+"<br>");
+
+
+        let num10=[1,5,2,4,8,9,6,3,7];
+        // 작은 순서대로 정렬
+        // document.write(num10.sort()+"<br>");
+        
+        // 큰 순서대로 정렬
+        // document.write(num10.reverse()+"<br>");
+
+
+        // num10에 있는 배열데이터중 3번째~5번쨰 짤라서 새로운 배열에 저장 silce()
+        let num100=num10.slice(3,5);
+        document.write(num100+"<br>");
+        </script>
+</body>
+</html>
