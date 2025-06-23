@@ -1,0 +1,149 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;box-sizing: border-box;}
+button{border: none;background: none;cursor: pointer;}
+
+section{
+    width: 100%;
+    border-bottom: 1px solid #DCDCDC;
+
+}
+section .inner{
+    width: 1168px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+section .inner .left{
+    width: 574px;
+    height: 346px;
+    position: relative;
+}
+section .inner .left .tit{
+    width: 100%;
+    height: 64px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+}
+section .inner .left .tit h3{
+    position: relative;
+    margin-left: 20px;
+}
+section .inner .left .tit h3:after{
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #EC4646;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+section .inner .left .tit h4{
+    color: #ccc;
+    position: relative;
+}
+section .inner .left .tit h4:after{
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section .inner .left .tit p{
+    color: #EC4646;
+}
+section .inner .product{
+    width: 574px;
+    height: 346px;
+    background: #F4F4F4;
+    padding: 20px;
+    position: relative;
+}
+section .inner .product h2{
+    font-size: 21px;
+    color: #333;
+}
+section .inner .product h2 span{
+    font-size: 32px;
+    font-weight: 500;
+}
+section .inner .product .line{
+    width: 20px;
+    height: 2px;
+    background: #EC4646;
+    margin: 4px 0;
+}
+section .inner .product .list ul.slick-dots{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
+}
+section .inner .product .list ul.slick-dots li button{
+    width: 10px;
+    height: 10px;
+    background: url("../images/btn_rolling_s.png")no-repeat;
+    text-indent: -99999px;
+}
+section .inner .product .list ul.slick-dots li.slick-active button{
+    background: url("../images/btn_rolling_s_on.png")no-repeat;
+}
+section .inner .product .list li{
+    text-align: center;
+}
+section .inner .product .list li a img{
+    border-bottom: 1px solid #ccc;
+}
+section .inner .product .list li a .info{
+    color: #333;
+}
+section .inner .product .list li a .info h3{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+section .inner .product .list li a .info p{
+    font-size: 13px;
+    color: #757575;
+}
+section .inner .product .list li a .info h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 페이지 버튼 custom */
+.btn_pause{
+    position: absolute;
+    left: 50%;
+    margin-left: 36px;
+    bottom: 18px;
+    width: 10px;
+    height: 10px;
+    background: url("../images/btn_rolling_s_stop.png");
+    text-indent: -99999px;
+}
+.btn_play{
+    position: absolute;
+    left: 50%;
+    margin-left: 52px;
+    bottom: 18px;
+    width: 10px;
+    height: 10px;
+    background: url("../images/btn_rolling_s_play.png");
+    text-indent: -99999px;
+}
