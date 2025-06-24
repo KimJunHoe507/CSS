@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응용문제</title>
+</head>
+<body>
+    <script>
+        // 응용문제
+        // 학원시간표 객체 만들기
+        // schedule
+        // 월~금
+        // 월 1교시(html) 2교시(css)
+        // 화 1교시(javascript) 2교시(jquery)
+        // 수 1교시(작품집) 2교시(포트폴리오)
+
+        let schedule={
+            "월요일":{
+                "1교시":"html",
+                "2교시":"css"
+            },
+            "화요일":{
+                "1교시":"javascript",
+                "2교시":"jquery"
+            },
+            "수요일":{
+                "1교시":"작품집",
+                "2교시":"포트폴리오"
+            },
+        }
+
+        // document.write("<h3>월요일</h3>");
+        // document.write(schedule.mon.time1+"<br>");
+        // document.write(schedule.mon.time2+"<br>");
+        // document.write("<h3>화요일</h3>");
+        // document.write(schedule.tues.time1+"<br>");
+        // document.write(schedule.tues.time2+"<br>");
+        // document.write("<h3>수요일</h3>");
+        // document.write(schedule.wednes.time1+"<br>");
+        // document.write(schedule.wednes.time2+"<br>");
+        
+        document.write("<hr>");
+
+        // 반복문
+        for(let key in schedule){
+            document.write("<h3>"+key+"</h3>");
+            for(let time in schedule[key]){
+                document.write(time+":"+schedule[key][time]+"<br>");
+            }
+        };
+    </script>
+</body>
+</html>

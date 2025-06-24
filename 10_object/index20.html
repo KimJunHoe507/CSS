@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 안에 반복문(for in)</title>
+</head>
+<body>
+    <script>
+        // for(let key in 객체명){
+        //      출력할 코드
+        // }
+
+        let dog={
+            name:'초코',
+            age:3,
+            color:"갈색"
+        };
+
+        document.write("name:"+dog.name+"<br>");
+        document.write("age:"+dog.age+"<br>");
+        document.write("color:"+dog.color+"<br>");
+        
+        document.write("<hr>");
+        
+        
+        // 반복문 사용
+
+        for(let key in dog){
+            document.write(key+":"+dog[key]+"<br>")
+        };
+
+    </script>
+</body>
+</html>
