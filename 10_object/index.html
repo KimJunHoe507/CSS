@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 객체data</title>
+</head>
+
+<body>
+    <!-- 
+        객체 : 어떤것에 대한 정보들을 모아놓은 저장공간
+        ex. 강아지 객체
+        이름, 나이, 색깔, 족보등 이런 정보들을 하나로 모아둔게 객체
+    -->
+    <script>
+        let dog = {
+            name: "초코",
+            age: 3,
+            color: "갈색",
+        };
+
+        let dog2 = ["초코", 3, "갈색"];
+
+        // 배열data를 접근해서 출력
+        document.write(dog2[0] + "<br>");
+        document.write(dog2[1] + "<br>");
+        document.write(dog2[2] + "<br>");
+        document.write(dog2 + "<br>");
+
+
+        // 객체data를 접근해서 출력
+        document.write("<hr>");
+        document.write(dog.name + "<br>");
+        document.write(dog.age + "<br>");
+        document.write(dog.color + "<br>");
+        console.log(dog);
+
+    </script>
+
+    <!-- 
+        객체 : key(index)와 값(value) 쌍으로 정보를 담는다
+            1. 객체이름.키이름 으로 저장된 data를 꺼낼 수 있다
+            2. 객체이름["key"]
+    -->
+    <script>
+        // 친구 객체
+        let friend={
+            name:"홍길동",
+            age:20,
+            hobby:"운동",
+            favorite:"수학"
+        };
+        document.write("<hr>");
+        console.log(friend);
+        document.write(friend.name+"<br>");
+        document.write(friend["name"]+"<br>");
+
+
+        // 학교 객체
+        let school={
+            name:"케이디초등학교",
+            location:{
+                city:"서울",
+                street:"종로구123"
+            },
+            grade:16,
+        };
+        
+
+        // 학교정보객체안에 주소정보객체가 들어갈 수 있음
+        document.write("<hr>");
+        document.write(school.name+"<br>");
+        document.write(school.location.city+"<br>");
+        document.write(school.location.street+"<br>");
+        console.log(school);
+
+
+        // 동물원에 있는 동물객체
+        // []표기법으로 접근
+        let zoo={
+            lion:{
+                name:"킹",
+                age:5,
+                character:"갈기가 멋져요"
+            },
+            gire:{
+                name:"길쭉이",
+                age:3,
+                character:"목이 길어요"
+            },
+            panda:{
+                name:"푸바오",
+                age:4,
+                character:"대나무를 좋아함"
+            },
+        };
+
+        document.write("<hr>");
+        document.write(zoo["lion"]["name"]+"<br>");
+        document.write(zoo.lion.name+"<br>");
+
+        // 응용문제
+        // 학원시간표 객체 만들기
+        // schedule
+        // 월~금
+        // 월 1교시(html) 2교시(css)
+        // 화 1교시(javascript) 2교시(jquery)
+        // 수 1교시(작품집) 2교시(포트폴리오)
+
+        let schedule={
+            mon:{
+                time1:"1교시:html",
+                time2:"2교시:css"
+            },
+            tues:{
+                time1:"1교시:javascript",
+                time2:"2교시:jquery"
+            },
+            wednes:{
+                time1:"1교시:작품집",
+                time2:"2교시:포트폴리오"
+            },
+        }
+
+        document.write("<hr>");
+        document.write("<h3>월요일</h3>");
+        document.write(schedule.mon.time1+"<br>");
+        document.write(schedule.mon.time2+"<br>");
+        document.write("<h3>화요일</h3>");
+        document.write(schedule.tues.time1+"<br>");
+        document.write(schedule.tues.time2+"<br>");
+        document.write("<h3>수요일</h3>");
+        document.write(schedule.wednes.time1+"<br>");
+        document.write(schedule.wednes.time2+"<br>");
+    </script>
+</body>
+
+</html>
