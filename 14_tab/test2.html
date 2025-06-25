@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>사과</li>
+        <li>딸기</li>
+        <li>바나나</li>
+        <li>수박</li>
+    </ul>
+    <script>
+        // index함수 : 여러 요소 중 내가 선택한 요소를 몇번째인지 알려주는 함수(배열)
+        $(function(){
+            $("ul li").click(function(){
+                let num=$(this).index();
+                alert(`당신은 ${num+1}번째를 클릭했습니다.`)
+            })
+
+
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>

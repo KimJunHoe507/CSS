@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this,index(),animate()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        li{list-style: none;}
+        a{text-decoration: none;}
+
+        ul{
+            width: 760px;
+            border: 1px solid #000;
+            display: flex;
+            gap: 10px;
+            margin: auto;
+        }
+        ul li{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        ul li a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">빨</a></li>
+        <li><a href="#">주</a></li>
+        <li><a href="#">노</a></li>
+        <li><a href="#">초</a></li>
+        <li><a href="#">파</a></li>
+        <li><a href="#">남</a></li>
+        <li><a href="#">보</a></li>
+    </ul>
+    <script>
+        $(function(){
+            $("ul li").click(function(){
+                let num=$(this).index();
+                console.log(num);
+                if(num==0){
+                    $(this).css({"background":"red"}).animate({"margin-top":400}).animate({"margin-top":0},function(){
+                        $(this).css({"background":"#fff"});
+                    });
+                }
+                else if(num==1){
+                    $(this).css({"background":"orange"}).animate({"margin-top":400}).animate({"margin-top":0},function(){
+                        $(this).css({"background":"#fff"});
+                    });
+                }
+                else if(num==2){
+                    $(this).css({"background":"yellow"}).animate({"margin-top":400}).animate({"margin-top":0},function(){
+                        $(this).css({"background":"#fff"});
+                    });
+                }
+                else if(num==3){
+                    $(this).css({"background":"green"}).animate({"margin-top":400}).animate({"margin-top":0},function(){
+                        $(this).css({"background":"#fff"});
+                    });
+                }
+                else if(num==4){
+                    $(this).css({"background":"blue"}).animate({"margin-top":400}).animate({"margin-top":0},function(){
+                        $(this).css({"background":"#fff"});
+                    });
+                }
+                else if(num==5){
+                    $(this).css({"background":"navy"}).animate({"margin-top":400}).animate({"margin-top":0},function(){
+                        $(this).css({"background":"#fff"});
+                    });
+                }
+                else{
+                    $(this).css({"background":"purple"}).animate({"margin-top":400}).animate({"margin-top":0},function(){
+                        $(this).css({"background":"#fff"});
+                    });
+                }
+            });
+
+
+
+        });
+
+
+
+
+    </script>
+</body>
+</html>
