@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수매개변수</title>
+</head>
+<body>
+    <script>
+        // 값을 안주고 기본값으로 설정할 때
+        // 매개변수에 기본값 넣기
+        // function friend(name=`친구`){
+        //     alert(`안녕, ${name}!!`)
+        // };
+        // friend(`홍길동`);
+        // friend();
+
+
+        // 문제
+        // 햄버거 세트 주문할 때 햄버거+음료 제공
+        // 세트메뉴 주문하고 따로 주문하지 않으면 콜라가 기본으로 제공
+        // 햄버거 이름하고 음료 이름을 입력받아서 출력하는 p/g
+        // 주문하신 `햄버거이름`, `음료이름` 세트메뉴가 나왔습니다.
+        // 음료 이름이 없을 때 `햄버거이름`,`콜라` 세트메뉴가 나왔습니다.
+
+
+        function order(burger,drink=`콜라`){
+            document.write(`주문하신 ${burger},${drink} 세트메뉴가 나왔습니다.<br>`)
+        };
+
+        order(`치즈버거`);
+        order(`치킨버거`,`아메리카노`);
+        order(`새우버거`);
+    </script>
+</body>
+</html>
