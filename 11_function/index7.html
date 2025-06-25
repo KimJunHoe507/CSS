@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수매개변수 전달</title>
+</head>
+<body>
+    <script>
+        // 함수 x
+        document.write(`홍길동님 환영합니다.<br>`);
+        document.write(`김철수님 환영합니다.<br>`);
+        document.write(`이흥부님 환영합니다.<br>`);
+        document.write(`강놀부님 환영합니다.<br>`);
+        document.write(`홍장화님 환영합니다.<br>`);
+        document.write(`<hr>`);
+
+
+        // 함수 o
+        function hello(name){
+            document.write(`${name}님 환영합니다.<br>`)
+        };
+        hello("홍길동");
+        hello("김철수");
+        hello("이흥부");
+        hello("강놀부");
+        hello("홍장화");
+
+        document.write("<hr>");
+        
+        // 여기는 서울입니다(5번)
+        // 여기는 부산입니다(5번)
+        // 여기는 제주입니다(5번)
+        
+        // 함수 x
+        for(let i=1;i<=5;i++){
+            document.write(`여기는 서울입니다.<br>`)
+        };
+        for(let i=1;i<=5;i++){
+            document.write(`여기는 부산입니다.<br>`)
+        };
+        for(let i=1;i<=5;i++){
+            document.write(`여기는 제주입니다.<br>`)
+        };
+        
+        document.write("<hr>");
+        // 함수 o
+        function city(dosi){
+            for(let i=1;i<=5;i++){
+                document.write(`여기는 ${dosi}입니다.<br>`)
+            }
+        }
+
+        city("서울");
+        city("부산");
+        city("제주");
+        document.write("<hr>");
+
+
+        // 변하는 숫자 2개를 더하는 함수
+        function add(x,y){
+            document.write(`${x}+${y}=${x+y}<br>`)
+        }
+
+        add(10,20);
+        add(100,300);
+        add(5,8);
+    </script>
+</body>
+</html>

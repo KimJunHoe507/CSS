@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 매개변수 응용문제</title>
+</head>
+<body>
+    <!-- 
+        1.  여기는 서울입니다.(5번)
+            여기는 부산입니다.(4번)
+            여기는 제주입니다.(3번)
+    -->
+    <script>
+        // 함수 x
+        for(let i=1;i<=5;i++){
+            document.write(`여기는 서울입니다.<br>`)
+        }
+        for(let i=1;i<=4;i++){
+            document.write(`여기는 부산입니다.<br>`)
+        }
+        for(let i=1;i<=3;i++){
+            document.write(`여기는 제주입니다.<br>`)
+        }
+
+        document.write(`<hr>`)
+        // 함수 o
+        function city(dosi,add){
+            for(let i=1;i<=add;i++){
+                document.write(`여기는 ${dosi}입니다.<br>`)
+            }
+        }
+        city(`서울`,5);
+        city(`부산`,4);
+        city(`제주`,3);
+
+
+
+
+    </script>
+</body>
+</html>

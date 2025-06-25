@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+        let tit=["<1절>","<2절>","<3절>","<4절>"];
+        let chorus=function(){
+            document.write(`무궁화 삼천리 화려강산<br>대한사람 대한으로 길이 보전하세<br><br>`)
+        };
+        let song1="동해 물과 백두산이 마르고 닳도록<br>하느님이 보우하사 우리나라 만세<br>";
+        let song2="남산 위에 저 소나무 철갑을 두른듯<br>바람서리 불변함은 우리 기상일세<br>";
+        let song3="가을 하늘 공활한데 높고 구름없이<br>밝은 달은 우리가슴 일편단심일세<br>";
+        let song4="이기상과 이맘으로 충성을 다하여<br>괴로우나 즐거우나 나라 사랑하세<br>";
+
+        document.write(`${tit[0]}<br>${song1}`);
+        chorus();
+        document.write(`${tit[1]}<br>${song2}`);
+        chorus();
+        document.write(`${tit[2]}<br>${song3}`);
+        chorus();
+        document.write(`${tit[3]}<br>${song4}`);
+        chorus();
+    </script>
+</body>
+</html>
