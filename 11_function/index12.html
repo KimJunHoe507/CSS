@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 return문</title>
+</head>
+<body>
+    <script>
+        // 직사각형의 넓이를 구하는 프로그램
+        // 가로, 세로 사이즈 외부에서 받기
+        // 가로= 00, 세로=00, 넓이=000
+
+        let width=prompt(`가로사이즈를 입력하세요.`);
+        let height=prompt(`세로사이즈를 입력하세요.`);
+
+        function squre(wd,hg){
+            return Number(wd)*Number(hg)
+        };
+
+        document.write(`가로=${width}<br>세로=${height}<br>넓이=${squre(width,height)}`);
+
+
+        // 여러 개의 데이터 결과를 받을 때
+        // 배열로 2개 값을 되돌리기
+
+        function getcolor(){
+            return ["빨강","그린","파랑"]
+        };
+        
+        let result=getcolor();
+        document.write(result[0]);
+        document.write(result[1]);
+        document.write(result[2]);
+        
+        // 객체로 되돌려받을 때
+        function getuse(){
+            return{
+                name:"홍길동",
+                age:20
+            }
+        };
+        let user= getuse();
+        document.write(user.name);
+        document.write(user.age);
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제1번,2번</title>
+</head>
+<body>
+    
+    <script>
+        // 문제1번
+
+        function bmiCalculator(name,weight,height){
+            let bmi=weight/(height*height/10000);
+            document.write(`${name}님의 체질량지수는 ${bmi}입니다.<br>`);
+        };
+        bmiCalculator("홀쭉이",43.52,160);
+        bmiCalculator("코린이",61.25,175);
+        bmiCalculator("통통이",77.76,180);
+
+        
+        
+        document.write("<hr>");
+        // 문제2번
+        let amount=3650000;
+        let term=1;
+        let rate=4;
+
+
+        function interestCalculator(amount,term,rate){
+            return Number(amount)*Number(term)*Number(rate)/100;
+        };
+
+        document.write(`맡긴 금액은 ${amount}원 입니다.<br>`);
+        document.write(`이자는 ${interestCalculator(3650000,1,4)}원 입니다.<br>`);
+        document.write(`최종 받을 금액은 ${amount+interestCalculator(3650000,1,4)}원 입니다.<br>`);
+
+    </script>
+</body>
+</html>
