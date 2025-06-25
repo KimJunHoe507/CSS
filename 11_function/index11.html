@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return</title>
+</head>
+<body>
+    <script>
+        // 두 수를 더하는 프로그램 작성
+        // 외부로부터 데이터를 2개 입력받아서 더한 결과를 되돌려받는 프로그램 작성
+        // body에 출력
+        // 출력결과는 3 + 5 = 8
+        // 11 + 34 = 45
+
+        let left=prompt("좌변의 숫자를 입력하세요.");
+        let right=prompt("우변의 숫자를 입력하세요.");
+        function add(num1,num2){
+            return Number(num1)+Number(num2)
+        };
+        document.write(`${left}+${right}= ${add(left,right)}`);
+    </script>
+</body>
+</html>
