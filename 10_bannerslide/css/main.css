@@ -126,24 +126,18 @@ section .inner .product .list li a .info h4{
     font-weight: 500;
 }
 
-/* 페이지 버튼 custom */
+/* 일시정지버튼 */
 .btn_pause{
     position: absolute;
     left: 50%;
-    margin-left: 36px;
-    bottom: 18px;
+    margin-left: 8%;
+    bottom: 20px;
     width: 10px;
     height: 10px;
-    background: url("../images/btn_rolling_s_stop.png");
+    background: url("../images/btn_rolling_s_stop.png")no-repeat;
     text-indent: -99999px;
 }
-.btn_play{
-    position: absolute;
-    left: 50%;
-    margin-left: 52px;
-    bottom: 18px;
-    width: 10px;
-    height: 10px;
-    background: url("../images/btn_rolling_s_play.png");
-    text-indent: -99999px;
+/* 플래이버튼 */
+.btn_pause.on{
+    background: url("../images/btn_rolling_s_play.png")no-repeat;
 }
