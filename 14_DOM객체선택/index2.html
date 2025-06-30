@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체선택</title>
+</head>
+<body>
+    <!-- 
+        태그선택자
+    -->
+        <h1>큰제목1</h1>
+        <h1>큰제목2</h1>
+        <h1>큰제목3</h1>
+
+        <script>
+            // DOM객체를 선택해서 변수에 적용
+            // 태그선택자를 자바스크립트에서 접근하면 배열로 처리
+            let tit=document.getElementsByTagName("h1");
+            console.log(tit);
+            tit[0].style.color="red";
+            tit[1].style.color="green";
+            tit[2].style.color="blue";
+
+
+        </script>
+</body>
+</html>

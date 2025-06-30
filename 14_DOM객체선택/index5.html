@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체선택명령</title>
+</head>
+<body>
+    <ul>
+        <li>빨</li>
+        <li>주</li>
+        <li>노</li>
+        <li>초</li>
+        <li>파</li>
+        <li>남</li>
+        <li>보</li>
+    </ul>
+
+    <script>
+        // 문서 객체선택 요소 하나 선택 queryselect()
+        // li요소 모두 선택(배열) querySelectorAll()
+        let rainbow=document.querySelectorAll('ul li');
+        console.log(rainbow);
+
+        rainbow[0].style.color="yellow";
+        rainbow[0].style.fontSize="48px";
+        
+        rainbow[1].style.color="yellow";
+        rainbow[1].style.fontSize="48px";
+        
+        rainbow[2].style.color="yellow";
+        rainbow[2].style.fontSize="48px";
+        
+        rainbow[3].style.color="yellow";
+        rainbow[3].style.fontSize="48px";
+        
+        rainbow[4].style.color="yellow";
+        rainbow[4].style.fontSize="48px";
+        
+        rainbow[5].style.color="yellow";
+        rainbow[5].style.fontSize="48px";
+        
+        rainbow[6].style.color="yellow";
+        rainbow[6].style.fontSize="48px";
+
+        // 반복문을 활용
+
+        for(let i=0;i<rainbow.length;i++){
+            rainbow[i].style.color="red";
+            rainbow[i].style.fontSize="48px";
+        }
+        
+        // li 요소중에 짝수번째만 배경색 파란색으로 설정
+        for(let i=0;i<rainbow.length;i++){
+            if(i%2==0){
+                rainbow[i].style.background="blue";
+            }
+            else{
+                rainbow[i].style.background="yellow";
+            }
+        }
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응용문제</title>
+</head>
+<body>
+    <h1>회원명단</h1>
+    <ul>
+        <li>강영훈</li>
+        <li>류다온</li>
+        <li>김효중</li>
+        <li>김효연</li>
+        <li>손서옥</li>
+        <li>김지연</li>
+        <li>김소위</li>
+        <li>한소희</li>
+        <li>박민황</li>
+        <li>민지윤</li>
+        <li>최지윤</li>
+        <li>표지수</li>
+        <li>이일준</li>
+        <li>조현아</li>
+    </ul>
+
+    <script>
+        let list=document.querySelectorAll('ul li');
+        for(i=0;i<list.length;i++){
+            if(i%2==0){
+                list[i].style.background="yellow";
+                list[i].style.fontSize="36px";
+            }
+            else{
+                list[i].style.listStyle="none";
+                list[i].style.fontSize="20px";
+                list[i].style.background="orange";
+                list[i].style.color="#fff";
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

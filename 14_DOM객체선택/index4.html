@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체선택</title>
+</head>
+<body>
+    <h1>문서객체선택1</h1>
+    <h1>문서객체선택2</h1>
+    <h1>문서객체선택3</h1>
+
+    <script>
+        let tit=document.getElementsByTagName("h1");
+        console.log(tit);
+        tit[0].style.color="red";
+
+        // 배열로 처리 안하고 무조건 요소 하나만 선택
+        let ttt=document.querySelector('h1');
+        console.log(`ttt=`,ttt);
+        ttt.style.border="3px solid red";
+
+        let doc2=document.querySelector("h1:nth-child(2)");
+        console.log(doc2);
+        doc2.style.color="green";
+
+        let doc3=document.querySelector("h1:nth-child(3)");
+        console.log(doc3);
+        doc3.style.color="blue";
+        doc3.style.border="5px solid blue";
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM문서 객체선택</title>
+</head>
+<body>
+    <h1 class="tit1">큰제목1</h1>
+    <h1 class="tit2">큰제목2</h1>
+    <h1 class="tit3">큰제목3</h1>
+
+    <script>
+        // DOM문서객체를 선택
+        // class도 자바스크립트에서 배열로 처리
+        let ttt1=document.getElementsByClassName("tit1");
+        console.log(ttt1);
+        ttt1[0].style.color="red";
+
+        let ttt2=document.getElementsByClassName("tit2");
+        console.log(ttt2);
+        ttt2[0].style.color="green";
+        
+        let ttt3=document.getElementsByClassName("tit3");
+        console.log(ttt3);
+        ttt3[0].style.color="blue";
+
+
+
+    </script>
+</body>
+</html>
