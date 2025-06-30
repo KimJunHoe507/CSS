@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <!-- 
+        event : 마우스를 클릭하거나 올려놓거나 벗어나는,
+        마우스와 관련된 사용자의 행동을 웹브라우저가 감지해서
+        사용자가 원하는 동작을 하도록 만드는 것
+        
+        대표적인 이벤트
+        click, dblclick, mousedown, mouseup, mousemove, mouseenter, mouseleave
+    -->
+    <div>박스</div>
+
+    <script>
+        // DOC문서 객체선택해서 변수에 저장
+        let box=document.querySelector("div");
+        console.log(box);
+
+        // 해당 객체를 스타일 이용하여 서식변경
+        box.style.width="300px";
+        box.style.height="300px";
+        box.style.border="3px solid #000";
+        box.style.background="orange";
+        box.style.fontSize="36px";
+        box.style.textAlign="center";
+        box.style.lineHeight="300px";
+        box.style.cursor="pointer";
+        box.style.position="absolute";
+        box.style.left="50%";
+        box.style.top="50%";
+        box.style.transform="translate(-50%,-50%)";
+
+        // 자바스크립트에서 사용하는 이벤트 문법 3가지
+        // 박스를 클릭하면 배경색이 빨간색으로 바뀌고 테두리선은 초록색으로
+
+        // 1. 이번 버전에서 클릭 이벤트
+        box.onclick=function(){
+            // box.style.background="red";
+            // box.style.border="10px solid green";
+
+            // this.style.background="red";
+            // this.style.border="10px solid green";
+        }
+
+        // 2. 최신 버전(es6)에서 클릭 이벤트
+        box.addEventListener("click",function(){
+            this.style.background="blue";
+            this.style.border="10px solid red";
+        })
+        
+        // 이벤트 hover시
+        box.addEventListener("mouseenter",function(){
+            this.style.background="red";
+            this.style.border="10px solid green";
+        })
+        
+        box.addEventListener("mouseleave",function(){
+            this.style.background="orange";
+            this.style.border="10px solid #000";
+        })
+        
+        box.addEventListener("mousedown",function(){
+            this.style.background="gray";
+            this.style.border="10px solid #000";
+        })
+
+
+    </script>
+</body>
+</html>

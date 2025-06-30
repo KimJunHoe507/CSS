@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <ul>
+        <li>빨</li>
+        <li>주</li>
+        <li>노</li>
+        <li>초</li>
+        <li>파</li>
+        <li>남</li>
+        <li>보</li>
+    </ul>
+
+    <script>
+        let box=document.querySelectorAll("ul li");
+        console.log(box);
+
+        for(let i=0;i<box.length;i++){
+            box[i].style.border="1px solid #000";
+            box[i].style.listStyle="none";
+            box[i].style.width="100px";
+            box[i].style.height="100px";
+            box[i].style.marginBottom="10px";
+            box[i].style.textAlign="center";
+            box[i].style.lineHeight="100px";
+            box[i].style.cursor="pointer";
+        };
+        
+        // 이벤트 발생
+        box[0].addEventListener("click",function(){
+            this.style.background="red";
+        })
+        box[1].addEventListener("click",function(){
+            this.style.background="orange";
+        })
+        box[2].addEventListener("click",function(){
+            this.style.background="yellow";
+        })
+        box[3].addEventListener("click",function(){
+            this.style.background="green";
+        })
+        box[4].addEventListener("click",function(){
+            this.style.background="blue";
+        })
+        box[5].addEventListener("click",function(){
+            this.style.background="navy";
+        })
+        box[6].addEventListener("click",function(){
+            this.style.background="purple";
+        })
+
+
+    </script>
+</body>
+</html>
