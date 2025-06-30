@@ -101,7 +101,7 @@ img{border: none;}
     font-weight: 700;
     color: #888;
 }
-.section .inner .right .wrap .menu li:first-child a{
+.section .inner .right .wrap .menu li.on a{
     color: #333;
 }
 .section .inner .right .wrap .more{
@@ -131,6 +131,12 @@ img{border: none;}
     display: flex;
     justify-content: space-between;
     position: relative;
+}
+.section .inner .right .m2,
+.section .inner .right .m3,
+.section .inner .right .m4,
+.section .inner .right .m5{
+    display: none;
 }
 .section .inner .right .list li::after{
     content: "";
