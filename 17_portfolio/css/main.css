@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+    color: #fff;
+}
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg_section_01.jpg)no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.intro .inner{
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.intro .inner .info{
+    display: flex;
+    flex-flow: column;
+    gap: 100px;
+}
+.intro .inner .info .web_date .to_day{
+    font-size: 36px;
+    font-weight: bold;
+}
+.intro .inner .info div h3{
+    font-size: 12px;
+    font-weight: 400;
+}
+.intro .inner .info .time .clock{
+    font-size: 50px;
+    font-weight: bold;
+}
+.intro .inner .info ul{
+    display: flex;
+    flex-flow: column;
+    gap: 70px;
+}
+.intro .inner .info ul li h2{
+    font-size: 28px;
+    font-weight: 900;
+}
+.intro .inner .info ul li h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+.intro .inner .info ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
