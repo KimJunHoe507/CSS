@@ -132,10 +132,7 @@ img{border: none;}
     justify-content: space-between;
     position: relative;
 }
-.section .inner .right .m2,
-.section .inner .right .m3,
-.section .inner .right .m4,
-.section .inner .right .m5{
+.section .inner .right .list2{
     display: none;
 }
 .section .inner .right .list li::after{
