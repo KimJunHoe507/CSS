@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -1px;
+}
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{display: block;border: none;}
+button{background: none;border: none;cursor: pointer;}
+
+section{
+    width: 100%;
+    padding: 170px 0 114px;
+}
+section .inner{
+    width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+section .inner .tit{
+    color: #323232;
+}
+section .inner .tit h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+section .inner .tit p{
+    font-size: 23px;
+    margin-top: 20px;
+}
+section .inner .tab{
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    margin: 40px 0;
+}
+section .inner .tab li{
+    width: 150px;
+    height: 45px;
+}
+section .inner .tab li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid #5b5b5b;
+    font-size: 22px;
+    font-weight: 500;
+    color: #5b5b5b;
+}
+section .inner .tab li.on a,
+section .inner .tab li:hover a{
+    background: #ff6400;
+    color: #fff;
+    border-color: #ff6400;
+}
+section .inner .product_wrap .product .list{
+    display: flex;
+    justify-content: space-evenly;
+}
+section .inner .product_wrap .product .list li{
+    width: 25%;
+    height: 215px;
+}
+section .inner .product_wrap .product .list li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+section .inner .product_wrap .product .list li a img{
+    margin: auto;
+}
+section .inner .product_wrap .product .list li a p{
+    font-size: 17px;
+    color: #5b5b5b;
+    margin-top: 15px;
+}
+
+section .inner .product_wrap .product .btn_more{
+    display: block;
+    width: 162px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #ff6400;
+    margin: 66px auto 0;
+}
+section .inner .product_wrap .product .btn_more span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: #ff6400;
+    text-align: left;
+    padding: 0 10%;
+    background: url(../images/more_arrow.png)80% center no-repeat;
+}
+
+/* 삼양라면 제외한 나머지 숨김 */
+section .inner .product_wrap .pd2{
+    display: none;
+}
