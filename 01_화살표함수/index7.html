@@ -7,14 +7,14 @@
 </head>
 <body>
     <script>
-        let bfat=(name,weight,height)=>{
+        let bmi=(name,weight,height)=>{
             let bmiCalculator=weight/(height*height/10000);
-            return (`${name}님의 체지방지수는 ${bmiCalculator}입니다.<br>`);
+            return document.write(`${name}님의 체질량지수는 ${bmiCalculator}입니다.<br>`);
         }
 
-        document.write(bfat("홀쭉이",43.52,160));
-        document.write(bfat("코린이",61.25,175));
-        document.write(bfat("통통이",77.76,180));
+        bmi("홀쭉이",43.52,160);
+        bmi("코린이",61.25,175);
+        bmi("통통이",77.76,180);
 
     </script>
 </body>
