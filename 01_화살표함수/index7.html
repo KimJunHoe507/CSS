@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응용2</title>
+</head>
+<body>
+    <script>
+        let bfat=(name,weight,height)=>{
+            let bmiCalculator=weight/(height*height/10000);
+            return (`${name}님의 체지방지수는 ${bmiCalculator}입니다.<br>`);
+        }
+
+        document.write(bfat("홀쭉이",43.52,160));
+        document.write(bfat("코린이",61.25,175));
+        document.write(bfat("통통이",77.76,180));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es6화살표함수</title>
+</head>
+<body>
+    
+    <script>
+        // 기존함수(익명)
+        let hi=function(){
+            alert(`안녕!`);
+        }
+
+        hi();
+
+        // 화살표함수
+        let hi2=()=>{
+            // 표현식코드(1줄)
+            alert(`hello`)
+        }
+
+        hi2();
+
+        // 표현식코드가 하나일 때
+        // 중괄호{} 생략가능
+        let hi3= ()=>alert(`good morning`);
+
+        hi3();
+
+        // 표현식코드가 여러 개일 때
+        // 중괄호{} 생략불가능
+        let hi4=()=>{
+            alert(`good m`);
+            alert(`good e`);
+        }
+        
+        hi4();
+
+
+    </script>
+</body>
+</html>
