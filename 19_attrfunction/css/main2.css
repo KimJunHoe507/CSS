@@ -1,0 +1,53 @@
+@charset "utf-8";
+body{
+    font-family: '맑은 고딕', 'malgun gothic', sans-serif;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{display: block;border: none;}
+
+.box{
+    width: 100%;
+}
+.box .tit{
+    border: 1px solid #9A9A9A;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0 30px;
+}
+.box .tit h1{ 
+    font-size: 30px;
+}
+.box .tit ul{
+    display: flex;
+    gap: 20px;
+}
+.box .tit ul li{
+    width: 90px;
+    height: 60px;
+    border: 5px solid #ccc;
+}
+.box .tit ul li a{
+    width: 100%;
+    height: 100%;
+}
+.box .tit ul li a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .mainbox{
+    width: 436px;
+    height: 286px;
+    border: 7px solid #ccc;
+    margin: 30px auto 0;
+}
+.box .mainbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
