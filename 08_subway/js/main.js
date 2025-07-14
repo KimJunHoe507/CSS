@@ -20,6 +20,7 @@ $(function(){
 
     $('.m_gnb>ul>li>a').click(function(){
         $(this).next().slideToggle().parent().siblings().find('.depth2').slideUp();
+        $(this).toggleClass('on');
     });
 
     $('.all_menu').click(function(){
@@ -32,4 +33,8 @@ $(function(){
         $('.cover').fadeOut();
     });
 
+    $('.tab_nav ul li').click(function(){
+        $('.tab_nav ul li').removeClass('on');
+        $(this).addClass('on');
+    })
 })
