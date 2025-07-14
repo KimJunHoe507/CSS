@@ -20,6 +20,7 @@ $(function(){
 
     $('.m_gnb>ul>li>a').click(function(){
         $(this).next().slideToggle().parent().siblings().find('.depth2').slideUp();
+        $(this).parent().siblings().find('a.on').removeClass('on');
         $(this).toggleClass('on');
     });
 
