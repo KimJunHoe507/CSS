@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataset</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- 개발자가 속성을 임의로 만들어서 사용하고싶을 때 -->
+    <!-- jQuery에서 attr() -->
+    <!-- javascript getAttribute() -->
+    <!-- <태그명 data-이름-이름></태그명> -->
+    <!-- data 뒤에 붙는 이름은 소문자로 시작 -->
+    <h1 data-index="a">제목태그1</h1>
+    <h1 data-index="b">제목태그2</h1>
+    <h1 data-index="c">제목태그3</h1>
+    <script src="./js/main.js"></script>
+
+    <script>
+        // 문서객체 선택 후 변수에 저장
+        let tit = document.getElementsByTagName('h1');
+        console.log(tit)
+
+        for(let i=0; i<tit.length; i++){
+            tit[i].addEventListener('click',function(){
+                let index = this.getAttribute('data-index');
+                alert(index);
+            })
+        }
+    </script>
+</body>
+</html>

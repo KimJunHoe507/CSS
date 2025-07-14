@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataset</title>
+</head>
+<body>
+    <!-- 자바스크립트에서는 dataset이라는 속성을 이용해서 사용자가 만든 속성값에 쉽게 접근 -->
+    <!-- 문서객체명.dataset.속성명 -->
+    <!-- 문서객체명.dataset[속성명] -->
+    <!-- 커피점에서 커피명과 금액을 처리해서 클릭시 주문하는 키오스크 -->
+
+    <h1>커피를 주문하세요</h1>
+    <button data-coffee-name="아메리카노" data-price="1900">아메리카노</button>
+    <button data-coffee-name="카페라떼" data-price="3600">카페라떼</button>
+    <button data-coffee-name="바닐라라떼" data-price="3400">바닐라라떼</button>
+    <button data-coffee-name="카푸치노" data-price="3800">카푸치노</button>
+
+    <hr>
+
+    <h2>고객님이 주문한 주문내역</h2>
+    <p>
+        <span id="coffee"></span> : <span id="price"></span>원을 주문했습니다.
+    </p>
+
+    <script>
+        let menubtn = document.getElementsByTagName('button');
+        console.log(menubtn);
+
+        let coffee = document.getElementById('coffee');
+        console.log(coffee);
+
+        let price = document.getElementById('price');
+        console.log(price);
+
+        for(let i=0; i<menubtn.length; i++){
+            menubtn[i].addEventListener('click',function(){
+                let cName = this.dataset.coffeeName;
+                let cPrice = this.dataset.price;
+
+                coffee.innerHTML = cName;
+                price.innerHTML = cPrice;
+            })
+        }
+
+    </script>
+</body>
+</html>

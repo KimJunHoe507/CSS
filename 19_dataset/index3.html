@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiosk</title>
+</head>
+<body>
+    <h1>커피를 주문하세요</h1>
+    <button data-coffee-name="아메리카노" data-price="2000">아메리카노</button>
+    <button data-coffee-name="카페라떼" data-price="3000">카페라떼</button>
+    <button data-coffee-name="바닐라라떼" data-price="4000">바닐라라떼</button>
+    <button data-coffee-name="카라멜마끼아또" data-price="5000">카라멜마끼아또</button>
+    <button data-coffee-name="자몽에이드" data-price="4500">자몽에이드</button>
+    <button data-coffee-name="청포도에이드" data-price="4600">청포도에이드</button>
+
+    <hr>
+    <h1>주문내역</h1>
+    <p>
+        제품 : <span id="coffee"></span>
+        <br>
+        가격 : <span id="price"></span>
+        <br>
+        제품을 주문하셨습니다.
+    </p>
+    <script>
+        let btn = document.getElementsByTagName('button');
+        let coffee = document.getElementById('coffee');
+        let price = document.getElementById('price');
+
+        for(i=0; i<btn.length; i++){
+            btn[i].addEventListener('click',function(){
+                let cName = this.dataset.coffeeName;
+                let cPrice = this.dataset.price;
+
+                coffee.innerHTML = cName;
+                price.innerHTML = cPrice;
+            })
+        }
+
+
+    </script>
+</body>
+</html>
