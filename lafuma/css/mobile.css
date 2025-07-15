@@ -1,0 +1,50 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    header{
+        height: 50px;
+    }
+    .header__inner{
+        width: 100%;
+        padding: 0 16px;
+    }
+    h1{
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .header__gnb{
+        display: none;
+    }
+    #header__icon--m_btn{
+        display: block;
+        width: 21px;
+        height: 18px;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-indent: -99999px;
+        background: url("../images/m_menu.png")no-repeat;
+        background-size: 21px 18px;
+    }
+    #header__icon--cart{
+        width: 21px;
+        height: 24px;
+        background: url("../images/m_mall.png")no-repeat;
+        background-size: 21px 24px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none;
+    }
+    main{
+        padding: 0 16px;
+    }
+    .main__title1 .show{
+        display: block;
+    }
+    .main__title1 .hidden{
+        display: none;
+    }
+    .main__title1 p{
+        background: #eee;
+    } 
+}
