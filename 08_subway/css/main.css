@@ -6,7 +6,7 @@ body{
 
 *{margin: 0;padding: 0;box-sizing: border-box;}
 li{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none; color: inherit;}
 img{display: block;border: none;}
 button{background: none; border: none;cursor: pointer;}
 
@@ -581,4 +581,32 @@ button{background: none; border: none;cursor: pointer;}
 }
 .btn_order span{
     font-size: 12px;
+}
+.popup{
+    background: #ffc20c;
+    padding: 10px 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 900;
+}
+.popup a img{
+    width: 100%;
+    min-width: 320px;
+}
+.popup .close{
+    height: 30px;
+}
+.popup .close form{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.popup .close label{
+    cursor: pointer;
+}
+.popup .close #today_close{
+    vertical-align: middle;
 }
