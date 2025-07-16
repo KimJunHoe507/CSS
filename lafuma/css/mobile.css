@@ -1,24 +1,111 @@
 @media ( min-width:320px ) and ( max-width:767px ){
+    /* 모바일 메뉴 */
+    .m__menu--wrap{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 102;
+    }
+    .m__menu{
+        width: calc(100% - 50px);
+        height: 100%;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 102;
+        text-transform: uppercase;
+    }
+    .m__menu h2{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #333;
+    }
+    .m__menu h2 img{
+        width: 116px;
+    }
+    .m__menu--gnb{
+        width: 100%;
+    }
+    .m__menu--gnb>li{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .m__menu--gnb>li>a{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #eee;
+        border-bottom: 1px solid #ccc;
+    }
+    .m__menu--gnb>li>.depth2{
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .m__menu--gnb>li>.depth2 li{
+        width: 50%;
+        height: 90px;
+        border-bottom: 1px solid #ccc;
+    }
+    .m__menu--gnb>li>.depth2 li a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .m__menu--gnb>li>.depth2>li>a>span{
+        display: flex;
+        width: 16px;
+        height: 16px;
+    }
+    .m__cover{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 101;
+    }
+    /* header */
     header{
         height: 50px;
     }
     .header__inner{
         width: 100%;
-        padding: 0 16px;
+        padding: 0 20px;
     }
     h1{
         left: 50%;
         transform: translate(-50%,-50%);
     }
+
+    /* header gnb */
     .header__gnb{
         display: none;
     }
+
+    /* header btn */
     #header__icon--m_btn{
         display: block;
         width: 21px;
         height: 18px;
         position: absolute;
-        left: 15px;
+        left: 20px;
         top: 50%;
         transform: translateY(-50%);
         text-indent: -99999px;
@@ -31,12 +118,20 @@
         background: url("../images/m_mall.png")no-repeat;
         background-size: 21px 24px;
     }
+
+    /* swiper */
     .swiper-button-prev,
     .swiper-button-next{
         display: none;
     }
+
     main{
-        padding: 0 16px;
+        padding: 0;
+    }
+
+    /* title */
+    .main__title{
+        padding: 20px 0 0;
     }
     .main__title .show{
         display: block;
@@ -44,7 +139,70 @@
     .main__title .hidden{
         display: none;
     }
+    .main__title h2{
+        padding-bottom: 16px;
+    }
     .main__title p{
+        font-size: 14px;
         background: #eee;
-    } 
+    }
+
+    /* content list */
+    .main__content--list li:nth-child(3),
+    .main__content--list li{
+        width: 100%;
+    }
+    .main__content--list li:nth-child(4),
+    .main__content--list li:last-child{
+        width: calc(100%/2);
+    }
+
+    /* snslive */
+    .main__snslive{
+        display: none;
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        padding: 0;
+        background: #eee;
+    }
+    .footer__top{
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+        gap: 72px;
+    }
+    .footer__menu{
+        width: 100%;
+        flex-flow: column;
+        gap: 0;
+        background: #fff;
+    }
+    .footer__menu li{
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #ccc;
+        text-indent: 20px;
+    }
+    .footer__menu li::after{
+        width: 11px;
+        height: 20px;
+        right: 20px;
+        background: url('../images/m_arrow.gif');
+    }
+    .footer__menu li:last-child::after{
+        display: block;
+    }
+    .footer__btn span{
+        display: none;
+    }
+    .footer__btn--familysite{
+        font-size: 12px;
+    }
+    .footer__copy{
+        padding: 18px 0 42px;
+        text-align: center;
+    }
 }
