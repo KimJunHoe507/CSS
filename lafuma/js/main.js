@@ -121,15 +121,15 @@ $(window).resize(function(){
 
 
 $(function(){
-    $('.header__icon--m_btn').click(function(){
+    $('#header__icon--m_btn').click(function(){
+        $('.m__menu--wrap').addClass('on');
         $('.m__cover').fadeIn();
-        $('.m__menu--wrap').addClass('.on');
         $('body,html').css({'overflow':'hidden'});
     });
 
     $('.m__cover').click(function(){
+        $('.m__menu--wrap').removeClass('on');
         $('.m__cover').fadeOut();
-        $('.m__menu--wrap').removeClass('.on');
         $('body,html').css({'overflow':'auto'});
     })
 })
@@ -137,7 +137,7 @@ $(function(){
 $('.depth2').hide();
 
 $(function(){
-    $('m__menu--gnb>li>a').click(function(){
+    $('.m__menu--gnb>li>a').click(function(){
         $(this).next().slideToggle().parent().siblings().find('.depth2').slideUp();
     })
 })
