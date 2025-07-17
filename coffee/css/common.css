@@ -156,6 +156,12 @@ footer{
     color: #a1a1a1;
     font-style: normal;
 }
+.footer__info--menu .way a{
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #2f2f2f;
+    color: rgba(255,255,255,0.5);
+}
 .footer__sns{
     width: 70px;
     display: flex;
