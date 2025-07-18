@@ -1,0 +1,10 @@
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+    background: #f6f6f6;
+}
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{display: block;border: none;}
+button{background: none; border: none;cursor: pointer;}
