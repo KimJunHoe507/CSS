@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css">
 </head>
+
 <body>
     <!-- 팝업창 -->
     <div class="popup">
@@ -36,9 +38,9 @@
                 <!-- 주 메뉴와 로고 -->
                 <ul class="header__gnb">
                     <li>
-                        <a href="newandbest.html">MENU</a>
+                        <a href="newbest.html">MENU</a>
                         <ul class="depth2">
-                            <li><a href="newandbest.html">New & Best</a></li>
+                            <li><a href="newbest.html">New & Best</a></li>
                             <li><a href="#">Theme Menu</a></li>
                             <li><a href="#">Coffee</a></li>
                             <li><a href="#">Tea & Beverage</a></li>
@@ -48,9 +50,9 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="findstore.html">STORE</a>
+                        <a href="store.html">STORE</a>
                         <ul class="depth2">
-                            <li><a href="findstore.html">매장찾기</a></li>
+                            <li><a href="store.html">매장찾기</a></li>
                             <li><a href="#">신규매장</a></li>
                         </ul>
                     </li>
@@ -110,8 +112,29 @@
         </header>
     </div>
 
-    <!-- slick slide -->
     <main>
+        <!-- 고정된 배너이미지 -->
+        <a href="#" class="main__banner--img"><img src="./images/btn_franchise_go.gif" alt="배너"></a>
+        <!-- 고정된 폼 -->
+        <div class="form__wrap">
+            <form action="">
+                <h2>개설문의</h2>
+                <h3>010-7117-0791</h3>
+                <input type="text" placeholder="이름" name="" id="">
+                <input type="text" placeholder="연락처(-없이 입력)" name="" id="">
+                <textarea placeholder="문의" name="" id=""></textarea>
+                <div class="check">
+                    <h4>개인정보 처리방침</h4>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <a href="#">[자세히보기]</a>
+                <input type="submit" value="보내기" class="btn_send">
+            </form>
+            <div class="top">
+                top
+            </div>
+        </div>
+        <!-- slick slide -->
         <div class="main__slide">
             <div class="main__slide--1"><a href="#"></a></div>
             <div class="main__slide--2"><a href="#"></a></div>
@@ -119,6 +142,141 @@
             <div class="main__slide--4"><a href="#"></a></div>
             <div class="main__slide--5"><a href="#"></a></div>
         </div>
+
+        <section id="section1">
+            <div class="section1__inner">
+                <div class="section1__mall">
+                    <h2>COFFEE MALL</h2>
+                    <p>커핀그루나루 공식 온라인몰</p>
+                    <a href="#"><img src="./images/btn_shop_intro_go.jpg" alt="온라인몰가기"></a>
+                    <div>
+                        <img src="./images/main_intro_img3.jpg" alt="온라인몰이미지">
+                    </div>
+                </div>
+                <div class="section1__members">
+                    <img src="./images/mnUo8ZWBcivL4sIg_20160126.png" alt="배너이미지">
+                </div>
+                <div class="section1__find">
+                    <h2>매장 찾기</h2>
+                    <p>가까운 커핀그루나루 찾기</p>
+                    <a href="#"><img src="./images/btn_main_intro_go.gif" alt="바로가기"></a>
+                    <div>
+                        <img src="./images/main_intro_img2.jpg" alt="찾기">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="section2__inner">
+                <h2>NEW<span>&</span>BEST</h2>
+                <div class="section2__product--wrap">
+                    <div class="section2__product--new">
+                        <a href="#"><img src="./images/A5hfEBtSKR9TzJ7O_20160122.png" alt="신상품"></a>
+                    </div>
+                    <ul class="section2__product--best">
+                        <li>
+                            <a href="#">
+                                <img src="./images/3R5aAkGTQil9JyHc_20191126.png" alt="밀키라떼" class="product">
+                                <div class="info">
+                                    <h3>밀키라떼(HOT/ICED)</h3>
+                                    <h4>Milky Latte</h4>
+                                </div>
+                                <img src="./images/main_menu_ico_new.png" alt="new" class="new">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/3R5aAkGTQil9JyHc_20191126.png" alt="더블 카페라떼" class="product">
+                                <div class="info">
+                                    <h3>더블 카페라떼(HOT/ICED)</h3>
+                                    <h4>Double Caffe Latte</h4>
+                                </div>
+                                <img src="./images/main_menu_ico_new.png" alt="new" class="new">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/XbD4nSmPvu5EhwCK_20191002.png" alt="흑당 라떼" class="product">
+                                <div class="info">
+                                    <h3>흑당 라떼(HOT/ICED)</h3>
+                                    <h4>Black Suger Latte</h4>
+                                </div>
+                                <img src="./images/main_menu_ico_new.png" alt="new" class="new">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/w796Z1dCKSnkJGe0_20191002.png" alt="흑당 큐브 브래드" class="product">
+                                <div class="info">
+                                    <h3>흑당 큐브 브래드</h3>
+                                    <h4>Black Suger Cube Bread</h4>
+                                </div>
+                                <img src="./images/main_menu_ico_new.png" alt="new" class="new">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="section3__inner">
+                <div class="section3__txt">
+                    <h2><span>프리미엄 액상</span> 블랙 / 스위트</h2>
+                    <p>원두추출액을 90%사용하여 진한 커피의 향과 맛을 담았습니다.</p>
+                    <a href="#">VIEW MORE &gt;</a>
+                </div>
+                <div class="section3__img">
+                    <img src="./images/main_menu_banner_img.png" alt="배너이미지">
+                </div>
+            </div>
+        </section>
+
+        <section id="section4">
+            <div class="section4__inner">
+                <div class="section4__bannerslide">
+                    <div>
+                        <a href="#"><img src="./images/CaYidjnEzb5qtJMk_20160126.jpg" alt="슬라이드이미지1"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./images/CaYidjnEzb5qtJMk_20160126.jpg" alt="슬라이드이미지1"></a>
+                    </div>
+                </div>
+                <div class="section4__center--wrap">
+                    <div class="section4__center--top">
+                        <a href="#">
+                            <h3>사회공헌</h3>
+                            <p>커핀그루나루는 지역사회에<br>이바지하는<br>사회적 책임을 수행합니다.</p>
+                        </a>
+                    </div>
+                    <div class="section4__center--bottom">
+                        <a href="#">
+                            <h3>RECRUIT</h3>
+                            <p>당신의 꿈과 열정을<br>커핀그루나루와 함께 마음껏 펼치세요.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="section4__right">
+                    <div class="section4__right--inside">
+                        <a href="#">
+                            <h3>COFFINE<br>FRANCHISE</h3>
+                            <p>커핀그루나루의 노하우를 가지고<br>성공적인 창업방법을 알려드립니다.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <div class="section5__inner">
+                <ul class="section5__tab">
+                    <li class="on"><a href="#">face book</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">blog</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <!-- 푸터 -->
@@ -135,7 +293,8 @@
                     <li class="way"><a href="#">신규입점제안</a></li>
                     <li class="way"><a href="#">전체메뉴</a></li>
                 </ul>
-                <address class="footer__info--address">사업자등록번호 215-87-06529 서울시 송파구 백제고분로50길 7(방이동) 대표자 김은희&nbsp;&nbsp;&nbsp;&nbsp;고객센터 02-2202-0791 FAX 02-2202-0807</address>
+                <address class="footer__info--address">사업자등록번호 215-87-06529 서울시 송파구 백제고분로50길 7(방이동) 대표자
+                    김은희&nbsp;&nbsp;&nbsp;&nbsp;고객센터 02-2202-0791 FAX 02-2202-0807</address>
                 <p class="footer__info--copy">COPYRIGHT© 2016 COFFINE GURUNARU ALL RIGHTS RESERVED.</p>
             </div>
             <div class="footer__sns">
@@ -149,4 +308,5 @@
     <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
