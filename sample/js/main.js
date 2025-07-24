@@ -46,7 +46,7 @@ $(function(){
             trigger: "#about",
             start: '5% 40%',
             end: '30% 30%',
-            markers: true
+            // markers: true
         }
     })
     .from('.skill li span', {width: "50px"},0)
